@@ -10,7 +10,7 @@ class TestRequest(object):
     Usage:
     >>> test = TestRequest()
     >>> test.thread_request(4 , 100) # means 100 requests for each thread . In total it's 400 rqts.
-    >>> test.url="http://makemakego.com"
+    >>> test.url="http://duckduckgo.com"
     >>> test.loop_loop()
     Thread 3 finishes a HTTP conversation
     Thread 4 finishes a HTTP conversation
