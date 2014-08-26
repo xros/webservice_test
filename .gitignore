@@ -1,0 +1,14 @@
+build
+build/*
+*.pyc
+*.pyo
+*.swp
+*~
+back*
+local_*
+.python-eggs
+proxy.conf
+*.zdsock
+log.txt
+*.log
+
