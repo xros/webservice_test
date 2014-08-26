@@ -18,7 +18,9 @@ class TestRequest(object):
     ...
     Thread 3 finishes a HTTP conversation
     Thread 2 finishes a HTTP conversation
-    Thread 3 finishes a HTTP conversationThread 4 finishes a HTTP conversation
+    Thread 2 finished
+    Thread 3 finishes a HTTP conversation
+    Thread 4 finishes a HTTP conversation
     Thread 3 finished
     It takes 45.747551 seconds to handle                800 requests with 4 threads for each 200 sub-requests.
     _____SUMMERY_____
@@ -71,10 +73,10 @@ class TestRequest(object):
             pass              
         end_time = datetime.now()
         tdelta = end_time - start_time
-        print "It takes " + str(tdelta.total_seconds()) + " seconds to handle \
-               %d requests with %d threads for each %d sub-requests." % (self.allRequestAmount, self.threadAmount, self.eachRequestAmount)
+        print "It takes " + str(tdelta.total_seconds()) + " seconds to handle " 
+                + "%d requests with %d threads for each %d sub-requests." % (self.allRequestAmount, self.threadAmount, self.eachRequestAmount)
         print "_____SUMMERY_____"
-        print "%f requests/second" % (self.allRequestAmount/tdelta.total_seconds())
+        print "%f requests/second for the site: %s" % (self.allRequestAmount/tdelta.total_seconds(), self.url)
 
 
 __footer__ == "Happy hacking"

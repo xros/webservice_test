@@ -3,7 +3,7 @@ RESTful Webservice Test Tool
 * Just read the codes it's so easy
 ```python
     >>> test = TestRequest()
-    >>> test.thread_request(4 , 100) # means 100 requests for each thread . In total it's 400 rqts.
+    >>> test.thread_request(4 , 200) # means 200 requests for each thread . In total it's 800 rqts.
     >>> test.url="http://www.duckduckgo.com"
     >>> test.loop_loop()
     Thread 3 finishes a HTTP conversation
