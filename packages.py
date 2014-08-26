@@ -3,6 +3,7 @@ import urllib2
 import thread
 from datetime import datetime, timedelta
 
+__author__ = "Alexander Liu"
 
 class TestRequest(object):
     """
@@ -75,3 +76,5 @@ class TestRequest(object):
         print "_____SUMMERY_____"
         print "%f requests/second" % (self.allRequestAmount/tdelta.total_seconds())
 
+
+__footer__ == "Happy hacking"
