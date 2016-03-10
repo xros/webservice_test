@@ -28,7 +28,7 @@ RESTful Webservice Test Tool
 
     It takes 3.374847 seconds to handle 80 requests with 4 threads for each 20 sub-requests.
     _____SUMMERY_____
-    23.704778 requests/second for the site: http://www.baidu.com
+    23.704778 requests/second for the site: http://www.duckduckgo.com
 
 ```
 * Happy hacking
