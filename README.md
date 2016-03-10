@@ -1,7 +1,16 @@
 RESTful Webservice Test Tool
 =====
 * Just read the codes it's so easy
+
+```
+    # Getting into the folder
+    cd ./webservice_test
+    # Fire up the Python console
+    python
+```
+
 ```python
+    >>> from packages import TestRequest
     >>> test = TestRequest()
     >>> test.thread_request(4 , 20) # means 20 requests for each thread . In total it's 80 rqts.
     >>> test.url="http://www.duckduckgo.com"
